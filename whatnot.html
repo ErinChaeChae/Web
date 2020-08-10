@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Whatnot</title>
+    <script></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  <!--  <style>
+    body{background-color: #000000}
+    img.fixed_button{
+        position:fixed;
+        left:20px;
+        top:50px;
+    }
+    img.fixed_clover{
+        position:fixed;
+        right:100px;
+        top:50px;
+    }
+    </style>
+    -->
+</head>
+<body>
+    <h1>
+        <span>w</span><span>h</span><span>a</span><span>t</span><span>n</span><span>o</span><span>t</span>
+    </h1>
+    <form action="https://www.google.com/search" method="GET">
+        <div class="mx-auto mt-5 search-bar input-group mb-3">
+            <input name = "q" type="text" class="form-control rounded-pill" placeholder="검색 또는 url을 입력해주세요." aria-label="Recipient's username"">
+            <div class="input-group-append">
+            </div>
+        </div>
+    </form>
+    <script>
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#button").click(function(){
+                $("#clover").toggle();
+            });
+        $("#clover").click(function(){
+            $("#button").fadeToggle("slow", "linear");
+            });
+        });
+    </script>
+</body>
+</html>
