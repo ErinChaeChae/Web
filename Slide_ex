@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>SLIDE EXERCISE</title>
+<link rel="stylesheet" href="style.css">
+
+<!--화면 자동 전환-->
+<script>
+  const all = ele => document.querySelectorAll(ele)
+  const one = ele => document.querySelector(ele)
+  const slide = _ => {
+  const wrap = one('.slidewrap') // .slide 선택
+  const target = wrap.children[0] // .slide ul 선택
+  const len = target.children.length // .slide li 갯수
+  // .slide ul의 너비 조정
+  target.style.cssText = `width:calc(100% * ${len});display:flex;transition:1s`
+  // .slide li의 너비 조정
+  Array.from(target.children)
+  .forEach(ele => ele.style.cssText = `width:calc(100% / ${len});`)
+  // 화면 전환 실행
+  let pos = 0
+  setInterval(() => {
+    pos = (pos + 1) % (len-1) // 장면 선택
+    target.style.marginLeft = `${-pos * 100}%`
+   
+  }, 6000) // 6초마다 실행
+}
+window.onload = function () {
+  slide()
+}
+</script>
+</head>
+
+<body>
+    <!--버튼 클릭시 화면 전환, css와 연계-->
+    <div class="section" id="header">
+        <input type="radio" name="slide" id="slide01" checked>
+        <input type="radio" name="slide" id="slide02">
+        <input type="radio" name="slide" id="slide03">
+    
+<div class="slidewrap">
+  <ul class="slidelist">
+    <li>
+        <a>
+            <label for="slide03" class="left"></label>
+            <img src ="1.jpg" style="max-width:100%; height:auto;">
+            <label for="slide02" class="right"></label>
+            
+        </a>
+    </li>
+    <li>
+        <a>
+            <label for="slide01" class="left"></label>
+            <img src ="2.jpg" style="max-width:100%; height:auto;">
+            <label for="slide03" class="right"></label>
+        </a>
+    </li>
+    <li>
+        <a>
+            <label for="slide02" class="left"></label>
+            <img src ="3.jpg" style="max-width:100%; height:auto;">
+            <label for="slide01" class="right"></label>
+        </a>
+    </li>
+  </ul>
+</div>
+</div>
+
+<!--스크롤 부드럽게-->
+<div class="scrolllist">
+    <div id="num1"> <img src ="num1.jpg" style="max-width:100%; height:auto;"></div>
+    <div id="num2"> <img src ="num2.jpg" style="max-width:100%; height:auto;"></div>
+<!--마지막 기업소개 여기 추가-->
+
+</div>
+<!--버튼태그 화면고정 스크롤화면이동-->
+<div style="position: fixed; bottom: 5px; left: 5px;">
+    <a href="#header"><img src="top.png" title="위로가기"></a>
+    <button type="button" onclick="location.href='#num1'">첫사진</button>
+    <button type="button" onclick="location.href='#num2'">두번째사진</button>
+
+<script>
+    $('a').click(function () {
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+    return false;
+  });  
+</script>
+
+</body>
+</html>
