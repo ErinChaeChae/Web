@@ -1,2 +1,2 @@
 # Web
-웹 
+html, css, jquery, javascript
