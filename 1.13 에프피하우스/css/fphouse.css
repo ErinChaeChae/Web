@@ -1,0 +1,416 @@
+.navbar-nav{
+    position: fixed;
+    top: 21px;
+    left: 150px;
+}
+
+.carousel-item{
+    max-width: 100%;
+    height: auto;
+}
+.carousel-caption{
+    position: absolute;
+    left:550px;
+    top:250px;
+    text-align: left;
+}
+.carousel-indicators{
+    position: absolute;
+    top: 650px;
+}
+.portfolio-box{
+    max-width: 100%;
+    height: auto;
+}
+
+/*사진사이즈 위치조절*/
+.portfolio-box img{
+    object-fit: none;
+    object-position: 50% 50%;
+}
+.detail-margin{
+    margin-left: 7px;
+}
+
+.navbar-nav li:hover ul li{
+    height:35px;
+    overflow: visible;
+    padding:0;
+}
+.navbar-nav ul li{
+    float:none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+.navbar-nav ul a{
+    font-weight:normal;
+    color:#000000;
+}
+table.table {
+    border-collapse: collapse;
+    text-align: center;
+    line-height: 1.5;
+    margin: 20px 10px;
+}
+table.table th {
+    width: 155px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #fff;
+    border: #2a2c2e;
+}
+table.table td {
+    width: 350px;
+    padding: 10px;
+    /*text-align: left;*/
+    vertical-align: top;
+    color: rgba(255, 255, 255, 0.7);
+    border:#2a2c2e;
+}
+.reserved{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: small;
+}
+.address{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: normal;
+}
+/*보케어 핸드폰사진*/
+.box{
+    position: relative;
+}
+.back{
+    position: absolute;
+    top: -395px;
+    left: 950px;
+}
+.front{
+    position: absolute;
+    top: -300px;
+    left: 700px;
+}
+  /*하단 설명란*/
+.box2{
+    position: relative;
+}
+.box2 .address{
+    position: absolute;
+    bottom:0px;
+    left: 1px;
+}
+.box2 .reserved{
+    position: absolute;
+    bottom: 0px;
+    right: 1px;
+}
+.one{
+    border-style: solid; border-width:2px;
+}
+
+/*서브메뉴*/
+.smenu{
+    border:1px solid #be991d;
+    list-style: none;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 400px;
+    display: none;
+    position: absolute;
+    top:40px;
+}
+
+.smenu .left{
+    width:30%;
+    float: left;
+    height: 398px;
+    border:1px solid #be991d;
+    border-top:#fff;
+    border-left: #fff;
+    border-bottom: #fff;
+    box-sizing: border-box;
+    background-color: white;
+}
+.smenu .right{
+    width:60%;
+    float: right;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#text1{
+    font-size:29px;
+    font-family: 'NanumSquare';
+    font-weight: 100;
+    stroke: transparent;
+    letter-spacing: -1px;
+    margin-bottom: -6px;
+}
+#text2{
+    font-size:74px;
+    font-family: 'NanumSquare';
+    font-weight: 100;
+    stroke: transparent;
+    letter-spacing: -1px;
+    margin-bottom: -2px;
+ 
+}
+#text3{
+    font-size:21px;
+    font-family: 'NanumSquare';
+    font-weight: 100;
+    stroke: transparent;
+    letter-spacing: -2px;
+    margin-bottom: -20px;
+}
+
+/*메인화면 버튼설정*/
+#detail1{
+    font-size:14px;
+    background-color: transparent !important;
+    border-color: white;
+    color:white;
+    width: 150px;
+    height:40px;
+    letter-spacing: -1px;
+    padding-left: 10px;
+    padding-right:10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/*보케어 버튼설정*/
+#detail2{
+    font-size:13px;
+    background-color: #8f7317;
+    border-color: #be991d;
+    color:white;
+    letter-spacing: -1px;
+    margin-bottom: 3px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.height-full{
+    position: relative;
+    width:100%;
+    height: 730px;
+}
+.bocare-left{
+    position: absolute;
+    left: 230px;
+    top: 230px;
+}
+
+.bocare-right{
+    position: absolute;
+    right: 150px;
+    top: 270px;
+}
+
+/*보케어-웹매거진 텍스트 위치*/
+.text-lo{
+    position: relative;
+    right: 800px;
+    top: 80px;
+}
+.textcontent{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size:5rem;
+    color: white;
+    z-index:2;
+    text-align: center;
+}
+.port-img{
+    width: 100%;
+    height: 910px;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0,0,0,0,4);
+}
+
+.font-weight-1000{
+    font-weight: 1000;
+}
+.font-size-20{
+    font-size:20px;
+}
+
+/*비디오 모달*/
+.modal_wrap{
+    display: none;
+    width: 1300px;
+    height: 800px;
+    position: absolute;
+    top: 3400px;
+    left: 550px;
+    margin: -250px 0 0 -250px;
+    background:none;
+    z-index: 2;
+}
+.black_bg{
+    display: none;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0,0, 0.5);
+    top: 3000px;
+    z-index: 1;
+}
+.modal_close{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: -30px;
+}
+.modal_close> a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+    text-indent: -9999px;
+}
+.videoimg{
+    width: 100%;
+    height: auto;
+}
+#modal_btn{
+    border:0;
+    outline:0;
+}
+/*3분할 자세히보기 버튼*/
+.custombtn{
+    background-color: transparent;
+    border-color:white;
+    color:white;
+    border-radius: 5px;
+    letter-spacing: -1px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    padding: 2px 30px;
+    font-size: 1rem;
+    position:absolute;
+    height: 38px;
+    right: 2px;
+    margin-top:5px;
+}
+.custombtn1{
+    background-color: transparent;
+    border-color:white;
+    color:white;
+    border-radius: 5px;
+    letter-spacing: -1px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    padding: 2px 30px;
+    font-size: 1rem;
+    position:absolute;
+    height: 38px;
+    right: 13px;
+    margin-top:5px;
+}
+.custombtn2{
+    background-color: transparent;
+    border-color:white;
+    color:white;
+    border-radius: 5px;
+    letter-spacing: -1px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    padding: 2px 30px;
+    font-size: 1rem;
+    position:absolute;
+    height: 38px;
+    right: 60px;
+    margin-top:5px;
+}
+.custombtn:hover{
+    background-color: #ffffff;
+    color: #be991d;
+    border-color:#be991d;
+}
+.custombtn1:hover{
+    background-color: #ffffff;
+    color: #be991d;
+    border-color:#be991d;
+}
+.custombtn2:hover{
+    background-color: #ffffff;
+    color: #be991d;
+    border-color:#be991d;
+}
+ul.img_wrap{
+    margin-bottom: 45px;
+    height:auto;
+    list-style: none;
+}
+ul.txt_wrap{
+    padding-right: 200px;
+    float:none;
+    list-style: none;
+}
+/*뉴스*/
+.news{
+    overflow: hidden;
+}
+.left{
+    border:1px solid #fff;
+    list-style: none;
+    background: rgb(255, 255, 255);
+    width:50%;
+    height:auto;
+    float: left;
+    box-sizing: border-box;
+}
+.left .img_wrap{
+    border:1px solid grey;
+}
+.cf:after{
+    content:"";
+    display:block;
+    clear:both;
+    list-style: none;
+}
+.right{
+    width:48%;
+    float: right;
+    height: auto;
+    list-style: none;
+    border:1px solid #fff;
+    box-sizing: border-box;
+    background-color: white;
+}
+.right .left{
+    width:50%;
+    float:left;
+    list-style: none;
+    border:1px solid grey;
+}
+.right .right{
+    width:50%;
+    float:right;
+    list-style: none;
+}
+
+/*뉴스- 글자들*/
+#p1{
+    font-size: 17px;
+    margin-top: 15px;
+    color: #be991d;
+    margin-bottom: -1px;
+}
+#p2{
+    font-size: 27px;
+    margin-bottom: -1px;
+}
+#p4{
+    font-size:20px;
+}
+#p5{
+    margin-bottom: 3px;
+    color: gray;
+}
