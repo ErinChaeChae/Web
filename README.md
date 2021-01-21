@@ -1,2 +1,2 @@
 # Web
-html, css, jquery, javascript
+html, css, javascript
